@@ -1,0 +1,44 @@
+{
+  "name": "@filipemerker/react-native-instagram-media",
+  "version": "1.0.0",
+  "description": "An <InstagramMedia /> component for React Native.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipemerker/react-native-instagram-media.git"
+  },
+  "keywords": [
+    "instagram",
+    "react",
+    "react-native",
+    "image",
+    "video"
+  ],
+  "author": "Filipe Merker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filipemerker/react-native-instagram-media/issues"
+  },
+  "homepage": "https://github.com/filipemerker/react-native-instagram-media#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-native": "^0.61.5"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "jest-fetch-mock": "^3.0.1",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
