@@ -1,4 +1,4 @@
-import instagramMediaParser from './instagramMediaParser'
+import instagramMediaParser from './helpers/instagramMediaParser'
 
 export {
   instagramMediaParser
