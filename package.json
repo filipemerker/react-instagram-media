@@ -1,7 +1,7 @@
 {
-  "name": "@filipemerker/react-native-instagram-media",
-  "version": "1.2.2",
-  "description": "An <InstagramMedia /> component for React Native.",
+  "name": "react-instagram-media",
+  "version": "1.2.3",
+  "description": "An <InstagramMedia /> component for React and React Native.",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest"
@@ -21,7 +21,8 @@
     "react",
     "react-native",
     "image",
-    "video"
+    "video",
+    "social"
   ],
   "author": "Filipe Merker",
   "license": "MIT",
@@ -30,8 +31,7 @@
   },
   "homepage": "https://github.com/filipemerker/react-native-instagram-media#readme",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-native": "^0.61.5"
+    "react": "^16.12.0"
   },
   "peerDependencies": {},
   "devDependencies": {
