@@ -2,10 +2,12 @@ import React, { PureComponent } from 'react'
 import instagramMediaParser from '../helpers/instagramMediaParser'
 
 class InstagramMedia extends PureComponent {
-  state = {
-    post: {},
-    error: false,
-    loading: true,
+  constructor() {
+    this.state = {
+      post: {},
+      error: false,
+      loading: true,
+    }
   }
 
   async componentDidMount() {
