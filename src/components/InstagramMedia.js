@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react'
 import instagramMediaParser from '../helpers/instagramMediaParser'
 
 class InstagramMedia extends PureComponent {
-  constructor() {
+  constructor(props) {
+    super(props)
+
     this.state = {
       post: {},
       error: false,
