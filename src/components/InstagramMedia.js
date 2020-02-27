@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import intagramMediaParser from '../helpers/instagramMediaParser'
+import instagramMediaParser from '../helpers/instagramMediaParser'
 
 class InstagramMedia extends PureComponent {
   state = {
@@ -9,7 +9,7 @@ class InstagramMedia extends PureComponent {
 
   async componentDidMount() {
     try {
-      const post = await intagramMediaParser({ uri: this.props.uri })
+      const post = await instagramMediaParser({ uri: this.props.uri })
       
       this.setState({ post })
     } catch (err) {

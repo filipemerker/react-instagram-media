@@ -1,6 +1,6 @@
 {
   "name": "@filipemerker/react-native-instagram-media",
-  "version": "1.0.1",
+  "version": "1.2.2",
   "description": "An <InstagramMedia /> component for React Native.",
   "main": "./src/index.js",
   "scripts": {

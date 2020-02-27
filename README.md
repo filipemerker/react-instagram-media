@@ -5,8 +5,8 @@
 You can already download it and use it as such:
 
 ```js
-import { intagramMediaParser } from 'react-native-instagram-media'
+import { instagramMediaParser } from 'react-native-instagram-media'
 
-intagramMediaParser({ uri: 'https://www.instagram.com/p/B866lKJgReK/' })
+instagramMediaParser({ uri: 'https://www.instagram.com/p/B866lKJgReK/' })
   .then(post => console.log(post))
 ```
