@@ -16,7 +16,7 @@ class InstagramMedia extends PureComponent {
     try {
       const post = await instagramMediaParser({ uri: this.props.uri })
       
-      this.setState({ post })
+      this.setState({ post, loading: false })
     } catch (err) {
       console.error(err)
 
