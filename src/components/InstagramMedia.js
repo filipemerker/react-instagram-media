@@ -4,7 +4,8 @@ import instagramMediaParser from '../helpers/instagramMediaParser'
 class InstagramMedia extends PureComponent {
   state = {
     post: {},
-    error: false
+    error: false,
+    loading: true,
   }
 
   async componentDidMount() {
@@ -24,8 +25,18 @@ class InstagramMedia extends PureComponent {
   }
 
   render() {
-    const { post, error } = this.state
-    const { renderItem, renderMediaList, renderError, uri } = this.props
+    const { post, error, loading } = this.state
+    const {
+      renderItem = () => null,
+      renderMediaList = () => null,
+      renderError = () => null,
+      renderLoading = () => null,
+      uri
+    } = this.props
+
+    if (loading) {
+      return renderLoading()
+    }
 
     if (error) {
       return renderError(uri)
