@@ -20,7 +20,7 @@ class InstagramMedia extends PureComponent {
     } catch (err) {
       console.error(err)
 
-      this.setState({ error: true })
+      this.setState({ error: true, loading: false })
     }
   }
 
