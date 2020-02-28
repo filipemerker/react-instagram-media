@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, Fragment } from 'react'
 import instagramMediaParser from '../helpers/instagramMediaParser'
 
 class InstagramMedia extends PureComponent {
@@ -32,7 +32,7 @@ class InstagramMedia extends PureComponent {
     const { post, error, loading } = this.state
     const {
       renderItem = () => null,
-      renderMediaList = ((mediaList = null) => mediaList),
+      renderMediaList = (mediaList = null) => mediaList,
       renderError = () => null,
       renderLoading = () => null,
       uri
@@ -48,13 +48,9 @@ class InstagramMedia extends PureComponent {
 
     if (post.type === 'multiple') {
       return renderMediaList(
-        <>
-          {
-            post
-              .media
-              .map(media => renderItem(media))
-          }
-        </>
+        post
+          .media
+          .map(media => renderItem(media))
       )
     }
 

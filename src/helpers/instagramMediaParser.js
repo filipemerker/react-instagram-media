@@ -7,6 +7,7 @@ const getAbstractData = data => {
       GraphSidecar: 'multiple',
     }
     const type = types[data.__typename]
+    let caption = ''
     let media = []
     let description = ''
     let like_count = 0
@@ -56,12 +57,17 @@ const getAbstractData = data => {
       comment_count = data.edge_media_preview_comment.count
     }
 
+    if (data.accessibility_caption) {
+      caption = data.accessibility_caption
+    }
+
     return {
       id,
       description,
       like_count,
       comment_count,
       type,
+      caption,
       media
     }
   } catch (err) {
