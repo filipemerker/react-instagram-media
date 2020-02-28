@@ -1,11 +1,11 @@
 # react-instagram-media
 ⚛️ An `<InstagramMedia />` component for React and React Native.
 
-The motivation for this project is the need to "embed" Instagram content as part of a React/React Native application.
+The motivation behind this project was the need to "embed" Instagram content as part of a React/React Native application.
 
-What this lib does is fetching the Instagram Web page, parse the post data from there and present it formatted ans ready to use.
+What this lib does? It fetches the Instagram Web page, parse the post data from there and present it. Formatted and ready to use.
 
-This project have no say on how to present the data. You know best how it should look in your project.
+This project have no say on how you present the data, though. You know best how it should look in your project and that's why we use render props.
 
 ## Usage
 
