@@ -90,6 +90,37 @@ instagramMediaParser({ uri: 'https://www.instagram.com/p/B866lKJgReK/' })
   .then(post => console.log(post))
 ```
 
+## React Native
+
+Since all presentation is done using render props, you can use it in React Native and it *just works*™
+
+```jsx
+import { Image, View, Text } from 'react-native'
+
+// ...
+
+<InstagramMedia
+  uri="https://www.instagram.com/p/B866sdflKJgReK/"
+
+  renderItem={
+    ({ display_url, dimensions }) => (
+      <Image
+        source={{ uri: display_url }}
+        style={{ width: dimensions.width, height: dimensions.height }}
+      />
+    )
+  }
+
+  renderError={() => (
+    <Text>I have failed to parse it</Text>
+  )}
+
+  renderLoading={() => (
+    <Text>Loading</Text>
+  )}
+/>
+```
+
 ## Want to help?
 
 PR's are welcome. You can help by improving the docs, improving the code, adding tests, suggesting and discussing ideas in the issues.
