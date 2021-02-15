@@ -1,6 +1,6 @@
 <div align="center">
 <h1>react-instagram-media <img style="margin-top: 12px;" src="./assets/logo.svg" alt="instagram logo" /></h1>
-  <img width="400px" src="./assets/screenshot.png" alt="instagram logo" />
+  <h1><img width="400px" src="./assets/screenshot.png" alt="instagram logo" /></h1>
 </div>
 
 An `<InstagramMedia />` component for React and React Native.
