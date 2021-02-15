@@ -1,5 +1,12 @@
-# 📸 React Instagram Media
-An `<InstagramMedia />` component for React and React Native.
+<div align="center">
+<h1>react-instagram-media 📸</h1>
+
+<p>An `<InstagramMedia />` component for React and React Native.</p>
+</div>
+
+---
+
+
 
 The motivation behind this project was the need to "embed" Instagram content as part of a React/React Native application.
 
