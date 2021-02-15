@@ -1,4 +1,4 @@
-# ⚛️ React Instagram Media
+# 📸 React Instagram Media
 An `<InstagramMedia />` component for React and React Native.
 
 The motivation behind this project was the need to "embed" Instagram content as part of a React/React Native application.
