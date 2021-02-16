@@ -76,10 +76,14 @@ import { InstagramMedia } from 'react-instagram-media'
 It may be the case that you want to display the post's description, or it's like count. You can do it by using the `getPostData` method.
 
 ```jsx
-console.log(this.post.getPostData())
+const post = useRef({})
+
+if(post.current.getPostData) {
+  console.log(post.current.getPostData())
+}
 
 <InstagramMedia
-  ref={this.post}
+  ref={post}
   uri="https://www.instagram.com/p/B866lKJgReK/"
 />
 ```
